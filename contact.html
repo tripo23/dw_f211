@@ -11,13 +11,16 @@
 </head>
 
 <body>
-    
 
-    <header class="navBackground">
-        <a href="./index.html">
-            <img src="./img/logoNav.png" alt="logo">
-        </a>
-        <nav>
+
+    <header id="header">
+        <div class="headerLogo">
+            <a href="./index.html">
+                <img src="./img/logoNav.png" alt="logo">
+            </a>
+        </div>
+
+        <nav class="headerMenu">
             <ul>
                 <li> <a href="./music.html"> Music</a>
                     <ul>
@@ -32,56 +35,56 @@
         </nav>
     </header>
 
-    <h1>Talk with us</h1>
+    <p class="titles">Talk with us</p>
 
-    <form action="enviar.php" method="get">
-        <div>
-            <label for="name">Name</label>
-            <input type="text" id="name" placeholder="Your name" required>
-        </div>
-        <div>
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" placeholder="you@f211.com" required>
-        </div>
-
-        <div>
-            <label for="multi">Let us know what do you think about the latest song</label>
-            <div class="textarea">
-                <textarea name="multi" id="multi" cols="30" rows="10" required></textarea>
+        <form action="enviar.php" method="get">
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Your name" required>
             </div>
-        </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="you@f211.com" required>
+            </div>
 
-        <br>
+            <div>
+                <label for="multi">Let us know what do you think about the latest song</label>
+                <div class="textarea">
+                    <textarea name="multi" id="multi" cols="30" rows="10" required></textarea>
+                </div>
+            </div>
 
-        <div class="checks">
-            <input type="checkbox" name="tyc" id="tyc" required> Agree to terms and conditions.
             <br>
-            <input type="checkbox" name="news" id="news"> Sign up to receive all the latest news about F211!
-        </div>
 
-        <br>
+            <div class="checks">
+                <input type="checkbox" name="tyc" id="tyc" required> Agree to terms and conditions.
+                <br>
+                <input type="checkbox" name="news" id="news"> Sign up to receive all the latest news about F211!
+            </div>
 
-        <div>
-            <input type="reset" value="Delete">
-            <input type="submit" value="Send">
-        </div>
-    </form>
+            <br>
+
+            <div>
+                <input type="reset" value="Delete">
+                <input type="submit" value="Send">
+            </div>
+        </form>
 
 
-    <footer class="footer">
-        <div class="social-media">
-            <a href="https://open.spotify.com/artist/3Cpk1xlScqbYhmv5EqoI4Y?si=s7jiitX8TbyXMtJi5ZkmIw"
-                target="_blank"><img src="./img/spotify.png" alt="spotify"></a>
-        </div>
-        <div class="social-media">
-            <a href="https://www.youtube.com/c/FirstToEleven" target="_blank"><img src="./img/youtube.png"
-                    alt="youtube"></a>
-        </div>
-        <div class="social-media">
-            <a href="https://www.instagram.com/firsttoeleven/" target="_blank"><img src="./img/instagram.png"
-                    alt="instagram"></a>
-        </div>
-    </footer>
+        <footer class="footer">
+            <div class="social-media">
+                <a href="https://open.spotify.com/artist/3Cpk1xlScqbYhmv5EqoI4Y?si=s7jiitX8TbyXMtJi5ZkmIw"
+                    target="_blank"><img src="./img/spotify.png" alt="spotify"></a>
+            </div>
+            <div class="social-media">
+                <a href="https://www.youtube.com/c/FirstToEleven" target="_blank"><img src="./img/youtube.png"
+                        alt="youtube"></a>
+            </div>
+            <div class="social-media">
+                <a href="https://www.instagram.com/firsttoeleven/" target="_blank"><img src="./img/instagram.png"
+                        alt="instagram"></a>
+            </div>
+        </footer>
 
 
 
