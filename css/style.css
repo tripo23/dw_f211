@@ -199,6 +199,29 @@ ul li:hover ul {
         width: 100%;
     }
 
+        /* TOURS */
+
+        .toursContainer {
+            width: 90vw;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(10, 1fr);
+            align-items: center;
+            justify-items: center;       
+        }
+
+        .toursContainer__show {
+            width: 100%;
+            border-bottom: 0.1rem solid white;
+            text-align: center;
+            padding: 2vh 0;
+        }
+
+        .toursContainer__show p, button {
+            padding: 1vh;
+        }
+
 }
 
 @media screen and (min-width: 768px)
@@ -211,6 +234,7 @@ ul li:hover ul {
     .video-prom_container {
         max-width: 100vw;
         margin: 2vh 0;
+        gap: 1rem;
         padding: 3vh;
         display: flex;
         flex-wrap: nowrap;
@@ -281,6 +305,32 @@ ul li:hover ul {
 
     .shop_grid-container img {
         width: 100%;
+    }
+
+    /* TOURS */
+
+    .toursContainer {
+        width: 80vw;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+        align-items: center;
+        justify-items: center;
+        padding-top: 3vh;
+    }
+
+     .toursContainer__show {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        border-bottom: 0.1rem solid white;
+        text-align: center;
+        padding: 2vh 0;
+    }
+
+    .toursContainer__show p, button {
+        padding: 1vh;
     }
 
 }
@@ -372,13 +422,16 @@ ul li:hover ul {
 /* TOURS */
 
 
-.tour-container {
+.toursBackground {
+    width: 100vw;
+    min-height: 80vh;
     background-image: url("../img/live.webp");
     background-attachment: fixed;
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 
 button {
     background-color: rgb(30, 30, 30);
@@ -394,25 +447,6 @@ button {
     margin: 5px;
     border: 1px solid rgb(173, 173, 173);
 }
-
-
-.tour-dates {
-    position: relative;
-    margin: 0 auto;
-    width: 100vw;
-    text-align: center;
-    background-color: rgb(20, 20, 20, .4);
-}
-
-table,
-th,
-td {
-    border-bottom: 1px solid rgb(255, 255, 255, .4);
-    border-collapse: collapse;
-    height: 8vh;
-    min-height: 80px;
-}
-
 
 /* SHOP */
 
