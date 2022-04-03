@@ -199,28 +199,105 @@ ul li:hover ul {
         width: 100%;
     }
 
-        /* TOURS */
+    /* TOURS */
 
-        .toursContainer {
-            width: 90vw;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            grid-template-rows: repeat(10, 1fr);
-            align-items: center;
-            justify-items: center;       
-        }
+    .toursContainer {
+        width: 90vw;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+        align-items: center;
+        justify-items: center;
+    }
 
-        .toursContainer__show {
-            width: 100%;
-            border-bottom: 0.1rem solid white;
-            text-align: center;
-            padding: 2vh 0;
-        }
+    .toursContainer__show {
+        width: 100%;
+        border-bottom: 0.1rem solid white;
+        text-align: center;
+        padding: 2vh 0;
+    }
 
-        .toursContainer__show p, button {
-            padding: 1vh;
-        }
+    .toursContainer__show p,
+    button {
+        padding: 1vh;
+    }
+
+    /* CONTACT */
+
+    #formContainer {
+        display: grid;
+        grid-template-areas:
+            "name"
+            "name"
+            "email"
+            "email"
+            "multi"
+            "multi"
+            "check1_"
+            "check2_"
+            "buttons_";
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 3fr 0.5fr 0.5fr 0.5fr;
+        align-items: center;
+        justify-items: center;
+        text-align: right;
+
+    }
+
+    .tycs {
+        grid-area: check1_;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        margin-top: 1vw;
+    }
+
+    .news {
+        grid-area: check2_;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .buttons {
+        grid-area: buttons_;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        margin-top: 1vw;
+        justify-content: flex-end;
+    }
+
+    form label {
+        text-align: right;
+        font-size: calc(12px + 1vw);
+        ;
+    }
+
+    #name,
+    #email,
+    #multi {
+        font-size: calc(10px + 0.5vw);
+        min-height: 80%;
+        min-width: 80%;
+        text-align: center;
+    }
+
+    #multi {
+        height: 100%;
+    }
+
+    .tycs p,
+    .news p {
+        font-size: calc(10px + 0.5vw);
+        margin-left: 0.5vw;
+    }
+
+    #newsCheck,
+    #tyc {
+        font-size: 110%;
+    }
 
 }
 
@@ -320,7 +397,7 @@ ul li:hover ul {
         padding-top: 3vh;
     }
 
-     .toursContainer__show {
+    .toursContainer__show {
         display: flex;
         justify-content: space-around;
         width: 100%;
@@ -329,8 +406,73 @@ ul li:hover ul {
         padding: 2vh 0;
     }
 
-    .toursContainer__show p, button {
+    .toursContainer__show p,
+    button {
         padding: 1vh;
+    }
+
+    /* CONTACT */
+
+    #formContainer {
+        display: grid;
+        margin-right: 30vw;
+        grid-template-areas:
+            "name name"
+            "email email"
+            "multi multi"
+            "check1 check1_"
+            "check2 check2_"
+            "buttons buttons_";
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr 1fr 3fr 0.5fr 0.5fr 0.5fr;
+        align-items: center;
+        justify-items: stretch;
+        text-align: right;
+
+    }
+
+    .tycs {
+        grid-area: check1_;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        margin-top: 1vw;
+    }
+
+    .news {
+        grid-area: check2_;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .buttons {
+        grid-area: buttons_;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        margin-top: 1vw;
+        justify-content: flex-end;
+    }
+
+    form label {
+        text-align: right;
+        margin-right: 1vw;
+        font-size: calc(12px + 1vw);
+        ;
+    }
+
+    #name,
+    #email,
+    #multi {
+        font-size: calc(10px + 0.5vw);
+        min-height: 40%;
+    }
+
+    .tycs p,
+    .news p {
+        font-size: calc(10px + 0.5vw);
+        margin-left: 0.5vw;
     }
 
 }
@@ -433,7 +575,9 @@ ul li:hover ul {
 }
 
 
-button {
+button,
+#reset,
+#submit {
     background-color: rgb(30, 30, 30);
     text-decoration: none;
     font-weight: 500;
@@ -478,20 +622,19 @@ form {
     flex: 1 0 auto;
 }
 
-form label,
-input,
+
+form input[type="text"],
+input[type="email"],
 textarea {
-    margin: 5px;
+    background-color: #141414;
+    color: white;
+    border: none;
 }
 
-form input,
-textarea {
-    color: black;
-}
-
-.checks {
+#newsCheck,
+#tyc {
     color: white;
     text-align: justify;
     font-weight: bold;
-    font-size: 20px;
+    font-size: calc(14px + 1.5vw);
 }

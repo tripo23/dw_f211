@@ -35,59 +35,55 @@
         </nav>
     </header>
 
-    <div class="titles">Talk with us</div>
+    <div class="titles">
+        <p>Talk with us</p>
+    </div>
 
-        <form action="enviar.php" method="get">
-            <div>
-                <label for="name">Name</label>
-                <input type="text" id="name" placeholder="Your name" required>
-            </div>
-            <div>
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="you@f211.com" required>
-            </div>
+    <form id="formContainer" action="enviar.php" method="get">
+        <label id="nameLabel" for="name">Name</label>
 
-            <div>
-                <label for="multi">Let us know what do you think about the latest song</label>
-                <div class="textarea">
-                    <textarea name="multi" id="multi" cols="30" rows="10" required></textarea>
-                </div>
-            </div>
+        <input type="text" id="name" placeholder="Your name" required>
 
-            <br>
+        <label id="emailLabel" for="email">Email</label>
 
-            <div class="checks">
-                <input type="checkbox" name="tyc" id="tyc" required> Agree to terms and conditions.
-                <br>
-                <input type="checkbox" name="news" id="news"> Sign up to receive all the latest news about F211!
-            </div>
+        <input type="email" name="email" id="email" placeholder="you@f211.com" required>
 
-            <br>
+        <label id="multiLabel" for="multi">Message</label>
 
-            <div>
-                <input type="reset" value="Delete">
-                <input type="submit" value="Send">
-            </div>
-        </form>
+        <textarea name="multi" id="multi" cols="30" rows="10" required></textarea>
 
+        <div class="tycs">
+            <input type="checkbox" name="tyc" id="tyc" required>
+            <p>Agree to terms and conditions.</p>
+        </div>
 
-        <footer class="footer">
-            <div class="social-media">
-                <a href="https://open.spotify.com/artist/3Cpk1xlScqbYhmv5EqoI4Y?si=s7jiitX8TbyXMtJi5ZkmIw"
-                    target="_blank"><img src="./img/spotify.png" alt="spotify"></a>
-            </div>
-            <div class="social-media">
-                <a href="https://www.youtube.com/c/FirstToEleven" target="_blank"><img src="./img/youtube.png"
-                        alt="youtube"></a>
-            </div>
-            <div class="social-media">
-                <a href="https://www.instagram.com/firsttoeleven/" target="_blank"><img src="./img/instagram.png"
-                        alt="instagram"></a>
-            </div>
-        </footer>
+        <div class="news">
+            <input type="checkbox" name="news" id="newsCheck">
+            <p>Sign up to receive all the latest news about F211!</p>
+        </div>
+
+        <div class="buttons">
+            <input id="reset" type="reset" value="Delete">
+            <input id="submit" type="submit" value="Send">
+        </div>
+
+    </form>
 
 
-
+    <footer class="footer">
+        <div class="social-media">
+            <a href="https://open.spotify.com/artist/3Cpk1xlScqbYhmv5EqoI4Y?si=s7jiitX8TbyXMtJi5ZkmIw"
+                target="_blank"><img src="./img/spotify.png" alt="spotify"></a>
+        </div>
+        <div class="social-media">
+            <a href="https://www.youtube.com/c/FirstToEleven" target="_blank"><img src="./img/youtube.png"
+                    alt="youtube"></a>
+        </div>
+        <div class="social-media">
+            <a href="https://www.instagram.com/firsttoeleven/" target="_blank"><img src="./img/instagram.png"
+                    alt="instagram"></a>
+        </div>
+    </footer>
 
 </body>
 
