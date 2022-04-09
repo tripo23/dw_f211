@@ -51,25 +51,6 @@ nav ul li {
     color: white;
 }
 
-nav a {
-    text-decoration: none;
-    color: white;
-    animation-duration: 2s;
-    animation-name: appear;
-    animation-iteration-count: 1;
-}
-
-@keyframes appear {
-    0% {
-        opacity: 0;
-        filter: blur(3px);
-    }
-
-    100% {
-        opacity: 1;
-        filter: blur(0);
-    }
-}
 
 nav a:hover {
     color:rgb(90, 90, 90)
@@ -135,10 +116,6 @@ ul li:hover ul {
     padding: 5vh 0;
 }
 
-about p {
-    animation: bounce; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 2s; /* don't forget to set a duration! */
-}
 
 /* Media queries para 2 tamaños de pantalla */
 
