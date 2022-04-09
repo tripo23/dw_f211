@@ -52,8 +52,28 @@ nav ul li {
 }
 
 
+nav a {
+    text-decoration: none;
+    color: white;
+    animation-duration: 1s;
+    animation-name: appear;
+    animation-iteration-count: 1;
+}
+
 nav a:hover {
     color:rgb(90, 90, 90)
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        filter: blur(3px);
+    }
+
+    100% {
+        opacity: 1;
+        filter: blur(0);
+    }
 }
 
 ul {
