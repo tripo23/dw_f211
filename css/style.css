@@ -23,7 +23,7 @@ label {
 
 
 /* Elementos comunes de todas las páginas fuera de los media queries */
-
+/* 
 #header {
     display: flex;
     justify-content: space-between;
@@ -41,17 +41,18 @@ label {
     width: auto;
     max-width: 60px;
 }
+ */
 
 nav ul li {
     display: inline;
     font-weight: bold;
-    font-size: calc(10px + 1vw);
+    font-size: calc(8px + 0.8vw);
     padding: 0 3vw;
     width: 100%;
     color: white;
 }
 
-
+/*
 nav a {
     text-decoration: none;
     color: white;
@@ -104,7 +105,7 @@ ul li:hover ul {
     position: absolute;
     display: block;
     background-color: rgb(30, 30, 30);
-}
+} */
 
 .footer {
     position: relative;
@@ -117,7 +118,7 @@ ul li:hover ul {
     min-height: 60px;
     display: flex;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     bottom: 0px;
     flex-shrink: 0;
@@ -125,7 +126,6 @@ ul li:hover ul {
 
 .social-media img {
     max-width: 30px;
-    padding: 0 5vw;
 }
 
 .titles {
