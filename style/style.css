@@ -589,7 +589,7 @@ ul li:hover ul {
 .toursBackground {
     width: 100vw;
     min-height: 80vh;
-    background-image: url("../img/live.webp");
+    background-image: url("../assets/img/live.webp");
     background-attachment: fixed;
     background-position: top;
     background-repeat: no-repeat;
