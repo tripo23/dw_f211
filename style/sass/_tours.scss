@@ -1,0 +1,59 @@
+.toursBackground {
+    width: 100vw;
+    min-height: 80vh;
+    background-image: url("../../assets/img/live.webp");
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-width: 767px) /* mobile */ {
+    .toursContainer {
+        width: 90vw;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+        align-items: center;
+        justify-items: center;
+
+        &__show {
+            width: 100%;
+            border-bottom: 0.1rem solid white;
+            text-align: center;
+            padding: 2vh 0;
+
+            p, button {
+                padding:1vh
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) /* desktop */ {
+    .toursContainer {
+        width: 80vw;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+        align-items: center;
+        justify-items: center;
+        padding-top: 3vh;
+    
+
+        &__show {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            border-bottom: 0.1rem solid white;
+            text-align: center;
+            padding: 2vh 0;
+        
+            p, button {
+                padding: 1vh;
+            }
+        }
+    }
+}

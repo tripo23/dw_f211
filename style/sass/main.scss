@@ -1,0 +1,46 @@
+@import 'vars';
+@import 'tours';
+@import 'albums';
+@import 'shop';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    color: $fontColor;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: $mainBackgroundColor;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+}
+
+h3,
+label {
+    color: $fontColor;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1,25em;
+}
+
+nav ul li {
+    display: inline;
+    font-weight: bold;
+    font-size: calc(8px + 0.8vw);
+    padding: 0 3vw;
+    width: 100%;
+    color: $fontColor;
+}
+
+.titles {
+    color: $fontColor;
+    text-align: center;
+    font-weight: bold;
+    font-size: $titleFontSize;
+    padding: 5vh 0;
+}
+
