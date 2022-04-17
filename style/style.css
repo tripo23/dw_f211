@@ -376,6 +376,11 @@ ul li:hover ul {
 
     .gridShopIndex img {
         width: 100%;
+        transition: transform .2s;
+    }
+
+    .gridShopIndex img:hover { /* Zoom en hover solo para desktop */
+        transform: scale(1.1);
     }
 
     /* SHOP */
